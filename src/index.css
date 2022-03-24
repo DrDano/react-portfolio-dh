@@ -57,3 +57,7 @@ p {
 .btn {
   background-color: var(--light-color) !important;
 }
+
+.btn-active {
+  background-color: var(--accent-color) !important;
+}

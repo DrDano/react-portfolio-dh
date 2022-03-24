@@ -20,9 +20,12 @@ function App() {
       <main>
         {
           contactSelected === 0 ? (
+            <>
             <Portfolio />
+            {/* <Resume /> */}
+            </>
           ) : (
-            <Contact Form={Form} Button={Button} Modal={Modal} />
+            <Contact Form={Form} Button={Button} />
           )
         }
       </main>
