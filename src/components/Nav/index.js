@@ -18,10 +18,10 @@ export default function Nav(props) {
         <li className={`nav-item p-2 btn ${contactSelected && "btn-active"}`}>
           <span onClick={() => setContactSelected(1)}>Contact</span>
         </li>
-        <li className="nav-item p-2 btn" onClick={() => setContactSelected(0)}>
+        <li className="nav-item p-2 btn" onClick={() => setContactSelected(2)}>
           Portfolio
         </li>
-        <li className="nav-item p-2 btn" onClick={() => setContactSelected(0)}>Resume</li>
+        <li className="nav-item p-2 btn" onClick={() => setContactSelected(3)}>Resume</li>
       </ul>
     </nav>
   );

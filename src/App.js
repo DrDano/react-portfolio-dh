@@ -19,9 +19,9 @@ function App() {
       </header>
       <main>
         {
-          contactSelected === 0 ? (
+          contactSelected !==1 ? (
             <>
-            <Portfolio />
+            <Portfolio contactSelected={contactSelected}/>
             {/* <Resume /> */}
             </>
           ) : (
