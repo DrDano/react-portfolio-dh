@@ -1,18 +1,31 @@
+import { useState } from "react";
 import "./index.css";
-import { Table } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FormControl } from "react-bootstrap"
+import { Form, Button, Modal } from "react-bootstrap";
 import Nav from "./components/Nav";
-import Contact from "./components/Contact"
+import Contact from "./components/Contact";
+import Portfolio from "./components/Portfolio";
 
 function App() {
+  const [contactSelected, setContactSelected] = useState(0);
+
   return (
     <div>
       <header>
-        <Nav/>
-        <Contact FormControl={FormControl}/>
+        <Nav
+          contactSelected={contactSelected}
+          setContactSelected={setContactSelected}
+        />
       </header>
-      <main>projects</main>
+      <main>
+        {
+          contactSelected === 0 ? (
+            <Portfolio />
+          ) : (
+            <Contact Form={Form} Button={Button} Modal={Modal} />
+          )
+        }
+      </main>
       <footer>Accounts</footer>
     </div>
   );
