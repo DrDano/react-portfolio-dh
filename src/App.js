@@ -1,11 +1,12 @@
 import { useState } from "react";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Form, Button, Modal } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import Nav from "./components/Nav";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer"
+import Resume from "./components/Resume"
 
 function App() {
   const [tabSelected, setTabSelected] = useState("portfolio");
@@ -22,7 +23,8 @@ function App() {
         {
           tabSelected !=="contact" ? (
             <>
-            {tabSelected === "portfolio" && <Portfolio tabSelected={tabSelected}/>}
+            {tabSelected === "portfolio" && <Portfolio/>}
+            {tabSelected === "resume" && <Resume/>}
             </>
           ) : (
             <Contact Form={Form} Button={Button} />

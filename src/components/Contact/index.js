@@ -1,12 +1,12 @@
 import React from "react";
 
 export default function Contact(props) {
-  const { Form, Button, Modal } = props;
+  const { Form, Button } = props;
   return (
     <Form className="mx-5">
       <Form.Group className="mb-3" controlId="formName">
         <Form.Label>Name</Form.Label>
-        <Form.Control type="password" placeholder="Name" />
+        <Form.Control type="name" placeholder="Name" />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicEmail">
