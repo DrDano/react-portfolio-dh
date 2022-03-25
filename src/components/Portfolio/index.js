@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-export default function Portfolio(props) {
+export default function Portfolio() {
 
   const [projects] = useState([
     {
@@ -32,7 +32,7 @@ export default function Portfolio(props) {
   return (
     <>
       {projects.map((project) => (
-        <div key={`div${project.key}`} className="p-2">
+        <div key={`div${project.key}`} className="m-2 d-flex project">
         <h2 key={`h${project.key}`}><a href={project.projectDeployment} rel="noopener noreferrer" target="_blank">{project.title}</a></h2>
         <p key={`p${project.key}`}>{project.description}</p>
         <img src={require(`../../assets/images/${project.photo}`)} alt={project.title} key={`img${project.key}`} width="500" height="300"/>

@@ -27,7 +27,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--main-bg-color);
+  background-image: url("./assets/images/desert-5112222.svg");
+  background-repeat: repeat-x;
+  background-color: var(--main-bg-color);
+  background-size: cover;
 }
 
 code {
@@ -47,17 +50,48 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--light-color);
+  color: var(--grey-color-1);
 }
 
 p {
-  color: var(--grey-color-2);
+  color: var(--grey-color-1);
+}
+
+span {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Patua One", cursive;
+  font-family: "Staatliches", cursive;
+  font-size: 1.3rem;
 }
 
 .btn {
-  background-color: var(--light-color) !important;
+  background-color: var(--grey-color-1) !important;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Patua One", cursive;
+  font-family: "Staatliches", cursive;
 }
 
 .btn-active {
   background-color: var(--accent-color) !important;
+}
+
+#resume {
+  border-style: solid;
+  border-width: 10px;
+  border-color: var(--light-color);
+  border-radius: 10px;
+  background-color: var(--main-bg-color);
+}
+
+.project {
+  background-color: var(--grey-color-2);
+  font-family: "Bebas Neue", cursive;
+  font-family: "Patua One", cursive;
+  font-family: "Staatliches", cursive;
+}
+
+.form-label {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Patua One", cursive;
+  font-family: "Staatliches", cursive;
 }

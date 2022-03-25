@@ -12,7 +12,7 @@ export default function Nav(props) {
             className="btn"
             onClick={() => setTabSelected("about")}
           >
-            About Me
+            <span>About Me</span>
           </a>
         </li>
         <li
