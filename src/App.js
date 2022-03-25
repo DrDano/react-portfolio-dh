@@ -21,8 +21,7 @@ function App() {
         {
           tabSelected !=="contact" ? (
             <>
-            <Portfolio tabSelected={tabSelected}/>
-            {/* <Resume /> */}
+            {tabSelected === "portfolio" && <Portfolio tabSelected={tabSelected}/>}
             </>
           ) : (
             <Contact Form={Form} Button={Button} />

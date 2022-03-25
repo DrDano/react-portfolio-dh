@@ -16,12 +16,12 @@ export default function Nav(props) {
           </a>
         </li>
         <li
-          className={`nav-item p-2 btn ${tabSelected == "contact" && "btn-active"}`}
+          className={`nav-item p-2 btn ${tabSelected === "contact" && "btn-active"}`}
         >
           <span onClick={() => setTabSelected("contact")}>Contact</span>
         </li>
         <li
-          className={`nav-item p-2 btn ${tabSelected == "portfolio" && "btn-active"}`}
+          className={`nav-item p-2 btn ${tabSelected === "portfolio" && "btn-active"}`}
         >
           <span onClick={() => setTabSelected("portfolio")}>Portfolio</span>
         </li>
