@@ -7,21 +7,21 @@ import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(0);
+  const [tabSelected, setTabSelected] = useState("");
 
   return (
     <div>
       <header>
         <Nav
-          contactSelected={contactSelected}
-          setContactSelected={setContactSelected}
+          tabSelected={tabSelected}
+          setTabSelected={setTabSelected}
         />
       </header>
       <main>
         {
-          contactSelected !==1 ? (
+          tabSelected !=="contact" ? (
             <>
-            <Portfolio contactSelected={contactSelected}/>
+            <Portfolio tabSelected={tabSelected}/>
             {/* <Resume /> */}
             </>
           ) : (
