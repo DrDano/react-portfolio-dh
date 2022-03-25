@@ -69,6 +69,8 @@ span {
   font-family: "Bebas Neue", cursive;
   font-family: "Patua One", cursive;
   font-family: "Staatliches", cursive;
+  text-align: center;
+  align-self: center;
 }
 
 .btn-active {
@@ -88,6 +90,12 @@ span {
   font-family: "Bebas Neue", cursive;
   font-family: "Patua One", cursive;
   font-family: "Staatliches", cursive;
+}
+
+.project-header {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.3rem;
+  color: var(--accent-color)
 }
 
 .form-label {
