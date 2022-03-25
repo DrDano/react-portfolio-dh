@@ -35,7 +35,7 @@ export default function Portfolio(props) {
         <div key={`div${project.key}`} className="p-2">
         <h2 key={`h${project.key}`}><a href={project.projectDeployment} rel="noopener noreferrer" target="_blank">{project.title}</a></h2>
         <p key={`p${project.key}`}>{project.description}</p>
-        <img src={require(`../../assets/${project.photo}`)} alt={project.title} key={`img${project.key}`} width="500" height="300"/>
+        <img src={require(`../../assets/images/${project.photo}`)} alt={project.title} key={`img${project.key}`} width="500" height="300"/>
         <a href={project.projectRepo} key={`anchor${project.key}`}>Project GitHub Repository</a>
         </div>
       ))}
