@@ -13,8 +13,13 @@ export default function Contact(props) {
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" placeholder="Enter email" />
         <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
+          Your email is safe with me, I'll never share it.
         </Form.Text>
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formMessage">
+        <Form.Label>Message</Form.Label>
+        <Form.Control type="text" placeholder="Type your message to me" />
       </Form.Group>
       <Button variant="" type="submit">
         Submit
