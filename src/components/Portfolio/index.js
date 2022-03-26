@@ -47,8 +47,8 @@ export default function Portfolio() {
               {project.title}
             </a>
           </h2>
-          <div key={`div${project.key}`} className="m-2 d-flex project">
-            <p key={`p${project.key}`}>{project.description}</p>
+          <div key={`div${project.key}`} className="m-2 d-flex project p-2">
+            <p key={`p${project.key}`} className="project-des mx-2 p-2">{project.description}</p>
             <img
               src={require(`../../assets/images/${project.photo}`)}
               alt={project.title}
@@ -61,6 +61,7 @@ export default function Portfolio() {
               rel="noopener noreferrer"
               target="_blank"
               key={`anchor${project.key}`}
+              className="project-gh text-decoration-none px-2"
             >
               Project GitHub Repository
             </a>
