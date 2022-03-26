@@ -5,7 +5,7 @@ export default function Nav(props) {
 
   return (
     <nav>
-      <div className="d-flex m-3" id="nav-intro">
+      <div className="d-flex m-3 main-font" id="nav-intro">
         <h3>Daniel Harned</h3>
         <p className="mx-3 code">Full Stack Developer</p>
       </div>

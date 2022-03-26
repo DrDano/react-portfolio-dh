@@ -66,7 +66,7 @@ export default function Portfolio() {
   return (
     <>
       {projects.map((project) => (
-        <div className="py-3">
+        <div className="py-3" key={`portfolio${project.key}`}>
           <h2 key={`h${project.key}`}>
             <a
               href={project.projectDeployment}

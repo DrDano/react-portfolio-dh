@@ -40,6 +40,16 @@ body {
   border-radius: 20px;
 }
 
+.main-font {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Patua One", cursive;
+  font-family: "Staatliches", cursive;
+}
+
+.main-font-color {
+  color: var(--grey-color-1)
+}
+
 main {
   margin: 0 auto;
   max-width: 90%;
@@ -85,12 +95,6 @@ span {
   border-color: var(--light-color);
   border-radius: 10px;
   background-color: var(--main-bg-color);
-}
-
-#nav-intro {
-  font-family: "Bebas Neue", cursive;
-  font-family: "Patua One", cursive;
-  font-family: "Staatliches", cursive;
 }
 
 .project {
