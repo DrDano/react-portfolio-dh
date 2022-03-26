@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-portfolio-dh/static/css/main.f4630e73.css",
+    "main.js": "/react-portfolio-dh/static/js/main.005187d4.js",
+    "static/js/787.e456e473.chunk.js": "/react-portfolio-dh/static/js/787.e456e473.chunk.js",
+    "static/media/Daniel_portfolio_portrait.png": "/react-portfolio-dh/static/media/Daniel_portfolio_portrait.af35539d7e06fefa3443.png",
+    "static/media/interApp.jpg": "/react-portfolio-dh/static/media/interApp.a7eb439cbcbd82b39abf.jpg",
+    "static/media/dh-portrait.png": "/react-portfolio-dh/static/media/dh-portrait.866275c1d0dd7826a128.png",
+    "static/media/AFK.jpg": "/react-portfolio-dh/static/media/AFK.f55cb5018849de152f5a.jpg",
+    "static/media/desert-5112222.svg": "/react-portfolio-dh/static/media/desert-5112222.2b4cd5a6b0637c416b30.svg",
+    "static/media/blogfrog.jpg": "/react-portfolio-dh/static/media/blogfrog.ea4d1cec6e4de35ae7cb.jpg",
+    "static/media/employee-cms.jpg": "/react-portfolio-dh/static/media/employee-cms.1b35e037f71e23c2e17f.jpg",
+    "static/media/troph.jpg": "/react-portfolio-dh/static/media/troph.20a1efbc99058dd364f8.jpg",
+    "static/media/notserver.jpg": "/react-portfolio-dh/static/media/notserver.62d787094a0fa770fe0c.jpg",
+    "static/media/DH-logo.ico": "/react-portfolio-dh/static/media/DH-logo.8fde14610f1de1779e05.ico",
+    "index.html": "/react-portfolio-dh/index.html",
+    "main.f4630e73.css.map": "/react-portfolio-dh/static/css/main.f4630e73.css.map",
+    "main.005187d4.js.map": "/react-portfolio-dh/static/js/main.005187d4.js.map",
+    "787.e456e473.chunk.js.map": "/react-portfolio-dh/static/js/787.e456e473.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4630e73.css",
+    "static/js/main.005187d4.js"
+  ]
+}
