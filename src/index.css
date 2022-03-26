@@ -87,12 +87,19 @@ span {
   background-color: var(--main-bg-color);
 }
 
+#nav-intro {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Patua One", cursive;
+  font-family: "Staatliches", cursive;
+}
+
 .project {
   background-color: var(--grey-color-2);
   font-family: "Bebas Neue", cursive;
   font-family: "Patua One", cursive;
   font-family: "Staatliches", cursive;
   border-radius: 150px 60px;
+  max-width: 60rem;
 }
 
 .project-header {
@@ -109,7 +116,9 @@ span {
 .project-des {
   color: var(--grey-color-2);
   background-color: #4f6367c6;
-  height: 25%
+  height: 25%;
+  min-width: 10rem;
+  max-width: 30rem;
 }
 
 .form-label {

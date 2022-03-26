@@ -22,6 +22,8 @@ export default function AboutMe() {
             processes and make data more available. Natural mediator and good at
             guiding teams toward a goal. Experience in maintaining content
             management systems in both healthcare and wholesale.
+
+            A bit about me: I grew up in Arizona, and regularly took lots of trips into the desert. I love snow skiing, camping, and gaming with friends on the weekends. I got into programming because I love building things.
           </p>
         </>
       </div>

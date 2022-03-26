@@ -31,6 +31,36 @@ export default function Portfolio() {
       key: 2,
       projectRepo: "https://github.com/DrDano/inter-App",
     },
+    {
+      title: "Troph",
+      description:
+      "The app is the backend framework for an e-commerce website, and has routes readily generated through express.js. These routes are available to you within this package as Troph-Insomnia-Routes.json which you can import into your instance of Insomnia and readily use if you are running the application locally.",
+      photo: "troph.jpg",
+      projectDeployment:
+        "https://drive.google.com/file/d/1u64l7Gk-p9cF_uWIHl2jp6EpVWYgbhS0/view?usp=sharing",
+      key: 3,
+      projectRepo: "https://github.com/DrDano/troph",
+    },
+    {
+      title: "Notserver",
+      description:
+      "A note-taking application with a purely JSON database and express.js server-side framework. This app is intentionally simple to minimize distractions and give you a place to jot down your thoughts.",
+      photo: "notserver.jpg",
+      projectDeployment:
+        "https://notserverdh.herokuapp.com/",
+      key: 4,
+      projectRepo: "https://github.com/DrDano/Notserver",
+    },
+    {
+      title: "Employee-CMS",
+      description:
+      "A content-management system that runs entirely in your terminal, and can keep track of employee roles and salaries. All data storage is through mysql.",
+      photo: "employee-cms.jpg",
+      projectDeployment:
+        "https://drive.google.com/file/d/11a58pZZFNrVH8xqF-J5EWmgiItJk_zGc/view?usp=sharing",
+      key: 5,
+      projectRepo: "https://github.com/DrDano/Employee-CMS",
+    },
   ]);
 
   return (

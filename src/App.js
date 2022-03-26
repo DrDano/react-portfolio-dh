@@ -12,10 +12,18 @@ import About from "./components/About";
 function App() {
   const [tabSelected, setTabSelected] = useState("about");
 
+  {
+    document.title = "Daniel";
+  }
+
   return (
     <div>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossOrigin="true"
+      />
       <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Patua+One&family=Press+Start+2P&family=Staatliches&display=swap"
         rel="stylesheet"
