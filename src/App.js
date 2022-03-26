@@ -10,7 +10,7 @@ import Resume from "./components/Resume";
 import About from "./components/About";
 
 function App() {
-  const [tabSelected, setTabSelected] = useState("portfolio");
+  const [tabSelected, setTabSelected] = useState("about");
 
   return (
     <div>

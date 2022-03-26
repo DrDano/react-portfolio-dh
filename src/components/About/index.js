@@ -16,7 +16,7 @@ export default function AboutMe() {
           </a>
         </>
         <>
-          <p className="px-3">
+          <p className="px-3 mx-2 code">
             Software developer with a background in medicine and medical
             education who aims to develop web applications that automate manual
             processes and make data more available. Natural mediator and good at

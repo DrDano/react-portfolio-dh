@@ -5,6 +5,10 @@ export default function Nav(props) {
 
   return (
     <nav>
+      <div className="d-flex m-3" id="nav-intro">
+        <h3>Daniel Harned</h3>
+        <p className="mx-3 bg-black">Full Stack Developer</p>
+      </div>
       <ul className="nav d-flex p-2 justify-content-around">
         <li className={`nav-item btn ${tabSelected === "about" && "btn-active"}`}>
           <a

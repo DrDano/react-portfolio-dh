@@ -33,9 +33,11 @@ body {
   background-size: cover;
 }
 
-code {
+.code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+  background-color: rgb(53,59,67);
+  border-radius: 20px;
 }
 
 main {
