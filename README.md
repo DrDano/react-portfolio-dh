@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# React-Portfolio Daniel H.
+Allergy-based recipe network
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  ![](https://img.shields.io/badge/javascript-100-yellow?logo=javascript)
+  ![](https://img.shields.io/badge/react-dep-blue?logo=react)
+  ![](https://img.shields.io/badge/bootstrap-dep-blue?logo=bootstrap)
 
-## Available Scripts
+  ## Description
 
-In the project directory, you can run:
+  This application is deployed to GitHub pages.
 
-### `npm start`
+  This is my website, I built it to show off some of my projects and skills! Take a look through my projects, peruse my resume, read a bit about me, and if you like what you see, send me an email or message.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  The front end of this site was built primarily with react.js, and is a single-page-website. React-Bootstrap powers the form and much of the styling.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  ## Table of contents
 
-### `npm test`
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Maintainers](#maintainers)
+  * [Tests](#tests)
+  * [Credits](#credits)
+  * [License](#license)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  ## Deployment
+  [GitHub Pages Deployment](https://drdano.github.io/react-portfolio-dh/)
 
-### `npm run build`
+  ## Installation
+  No install required! If you want to deploy it somewhere else for some reason (hey, free advertising!), that can easily be done by cloning the repo.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  ## Usage
+  Go straight to the deployment, and start looking around!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  ## Maintainer
+  [@Daniel Harned](https://github.com/DrDano)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  ## Credits
+  
+  * [react.js](https://reactjs.org/)
+  * [react bootstrap](https://react-bootstrap.github.io/)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  ## License
+  Licensed under [MIT](https://choosealicense.com/licenses/mit) 2022 
+  
+  ![](https://img.shields.io/badge/license-MIT-blue)
