@@ -7,6 +7,8 @@ Allergy-based recipe network
 
   ## Description
 
+  ![react-portfolio-demo](./src/assets/images/react-portfolio-demo.jpg)
+
   This application is deployed to GitHub pages.
 
   This is my website, I built it to show off some of my projects and skills! Take a look through my projects, peruse my resume, read a bit about me, and if you like what you see, send me an email or message.
