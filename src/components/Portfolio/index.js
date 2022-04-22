@@ -3,12 +3,21 @@ import React, { useState } from "react";
 export default function Portfolio() {
   const [projects] = useState([
     {
+      title: "Beet-Hub",
+      description:
+        "Beethub is an interactive album-collection sharing experience. It is built for people who treat music as a lifestyle. Name and save collections, review albums from anywhere by clicking or tapping, and see other users' choices in real time. Beathub is integrated with Spotify, and has access to Spotify's full library of album artwork, artists, and more. There's no need to keep track of another subscription if you use BeetHub!",
+      photo: "beet-hub-home.jpg",
+      projectDeployment: "https://blooming-tundra-89879.herokuapp.com/",
+      key: 0,
+      projectRepo: "https://github.com/heatherviolet/beat-hub",
+    },
+    {
       title: "Blog-Frog",
       description:
         "Blog Frog is a tech networking app that lends itself to people who work with technology and are looking for a custom networking solution.",
       photo: "blogfrog.jpg",
       projectDeployment: "https://frognetwork.herokuapp.com/",
-      key: 0,
+      key: 1,
       projectRepo: "https://github.com/DrDano/Blog-Frog",
     },
     {
@@ -17,7 +26,7 @@ export default function Portfolio() {
         "The Allergy-Free Kitchen is the app for you if you've ever been to a restaurant, taken that first bite and realized you've been poisoned yet again. The app is full of user-created recipes that list real ingredients and allergies together. Peruse around and take in all the smells and flavors.",
       photo: "AFK.jpg",
       projectDeployment: "https://afk-network.herokuapp.com/",
-      key: 1,
+      key: 2,
       projectRepo:
         "https://github.com/JosephJamesCoop/the-allergy-free-kitchen",
     },
@@ -28,7 +37,7 @@ export default function Portfolio() {
       photo: "interApp.jpg",
       projectDeployment:
         "https://drive.google.com/file/d/1QQ-1rEx9wDw4cKdFj79J6T4CsCGT1IEI/preview",
-      key: 2,
+      key: 3,
       projectRepo: "https://github.com/DrDano/inter-App",
     },
     {
@@ -38,7 +47,7 @@ export default function Portfolio() {
       photo: "troph.jpg",
       projectDeployment:
         "https://drive.google.com/file/d/1u64l7Gk-p9cF_uWIHl2jp6EpVWYgbhS0/view?usp=sharing",
-      key: 3,
+      key: 4,
       projectRepo: "https://github.com/DrDano/troph",
     },
     {
@@ -48,7 +57,7 @@ export default function Portfolio() {
       photo: "notserver.jpg",
       projectDeployment:
         "https://notserverdh.herokuapp.com/",
-      key: 4,
+      key: 5,
       projectRepo: "https://github.com/DrDano/Notserver",
     },
     {
@@ -58,7 +67,7 @@ export default function Portfolio() {
       photo: "employee-cms.jpg",
       projectDeployment:
         "https://drive.google.com/file/d/11a58pZZFNrVH8xqF-J5EWmgiItJk_zGc/view?usp=sharing",
-      key: 5,
+      key: 6,
       projectRepo: "https://github.com/DrDano/Employee-CMS",
     },
   ]);
