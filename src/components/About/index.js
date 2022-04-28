@@ -2,11 +2,15 @@ import React from "react";
 
 export default function AboutMe() {
   return (
-    <div>
-        <h1 className="px-3">About Me</h1>
-      <div className="d-flex">
+    <div className="d-flex flex-col flex-wrap flex-lg-row" id="about-container">
+      <h1 className="px-3">About Me</h1>
+      <div id="about" className="d-flex flex-column flex-md-row">
         <>
-          <a href="https://github.com/DrDano">
+          <a
+            href="https://github.com/DrDano"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <img
               src={require("../../assets/images/dh-portrait.png")}
               alt="portrait"
@@ -21,9 +25,10 @@ export default function AboutMe() {
             education who aims to develop web applications that automate manual
             processes and make data more available. Natural mediator and good at
             guiding teams toward a goal. Experience in maintaining content
-            management systems in both healthcare and wholesale.
-
-            A bit about me: I grew up in Arizona, and regularly took lots of trips into the desert. I love snow skiing, camping, and gaming with friends on the weekends. I got into programming because I love building things.
+            management systems in both healthcare and wholesale. A bit about me:
+            I grew up in Arizona, and regularly took lots of trips into the
+            desert. I love snow skiing, camping, and gaming with friends on the
+            weekends. I got into programming because I love building things.
           </p>
         </>
       </div>
