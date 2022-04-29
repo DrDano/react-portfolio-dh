@@ -42,9 +42,9 @@ function App() {
           <Contact Form={Form} Button={Button} />
         )}
       </main>
-      <footer className="d-flex justify-content-end">
-        <Footer />
-      </footer>
+        <footer className="d-flex justify-content-end">
+          <Footer />
+        </footer>
     </div>
   );
 }
