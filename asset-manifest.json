@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio-dh/static/css/main.1c4362f8.css",
-    "main.js": "/react-portfolio-dh/static/js/main.33b60766.js",
+    "main.css": "/react-portfolio-dh/static/css/main.e12aebc6.css",
+    "main.js": "/react-portfolio-dh/static/js/main.7b65dfe0.js",
     "static/js/787.e456e473.chunk.js": "/react-portfolio-dh/static/js/787.e456e473.chunk.js",
     "static/media/Daniel_portfolio_portrait.png": "/react-portfolio-dh/static/media/Daniel_portfolio_portrait.af35539d7e06fefa3443.png",
     "static/media/interApp.jpg": "/react-portfolio-dh/static/media/interApp.a7eb439cbcbd82b39abf.jpg",
@@ -16,12 +16,12 @@
     "static/media/notserver.jpg": "/react-portfolio-dh/static/media/notserver.62d787094a0fa770fe0c.jpg",
     "static/media/DH-logo.ico": "/react-portfolio-dh/static/media/DH-logo.8fde14610f1de1779e05.ico",
     "index.html": "/react-portfolio-dh/index.html",
-    "main.1c4362f8.css.map": "/react-portfolio-dh/static/css/main.1c4362f8.css.map",
-    "main.33b60766.js.map": "/react-portfolio-dh/static/js/main.33b60766.js.map",
+    "main.e12aebc6.css.map": "/react-portfolio-dh/static/css/main.e12aebc6.css.map",
+    "main.7b65dfe0.js.map": "/react-portfolio-dh/static/js/main.7b65dfe0.js.map",
     "787.e456e473.chunk.js.map": "/react-portfolio-dh/static/js/787.e456e473.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c4362f8.css",
-    "static/js/main.33b60766.js"
+    "static/css/main.e12aebc6.css",
+    "static/js/main.7b65dfe0.js"
   ]
 }
