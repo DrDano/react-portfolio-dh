@@ -1,0 +1,1 @@
+import {readMeArr} from "./githubAPI"

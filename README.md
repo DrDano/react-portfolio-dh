@@ -1,5 +1,5 @@
 # React-Portfolio Daniel H.
-Allergy-based recipe network
+This portfolio was built with React to showcase some of my projects, peruse and enjoy!
 
   ![](https://img.shields.io/badge/javascript-100-yellow?logo=javascript)
   ![](https://img.shields.io/badge/react-dep-blue?logo=react)
