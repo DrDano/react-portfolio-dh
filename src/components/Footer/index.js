@@ -33,6 +33,7 @@ export default function Footer() {
             </a>
         </div>
     ))}
+    <a href="mailto:danielharned@gmail.com" rel="noopener noreferrer" target="_blank">danielharned@gmail.com</a>
     </>
   )
 }

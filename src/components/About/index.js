@@ -1,4 +1,8 @@
 import React from "react";
+// have email address visible
+// employers wont fill out contact form (remove it)
+// change font color for contrast across pages
+// Possibly make the resume interactive
 
 export default function AboutMe() {
   return (
@@ -25,7 +29,9 @@ export default function AboutMe() {
             education who aims to develop web applications that automate manual
             processes and make data more available. Natural mediator and good at
             guiding teams toward a goal. Experience in maintaining content
-            management systems in both healthcare and wholesale. A bit about me:
+            management systems in both healthcare and wholesale.
+            <br></br>
+            A bit about me:
             I grew up in Arizona, and regularly took lots of trips into the
             desert. I love snow skiing, camping, and gaming with friends on the
             weekends. I got into programming because I love building things.
