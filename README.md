@@ -7,7 +7,7 @@ This portfolio was built with React to showcase some of my projects, peruse and 
 
   ## Description
 
-  ![react-portfolio-demo](./src/assets/images/react-portfolio-demo.jpg)
+  ![react-portfolio-demo](./src/assets/images/react-portfolio-dh.jpg)
 
   This application is deployed to GitHub pages.
 
