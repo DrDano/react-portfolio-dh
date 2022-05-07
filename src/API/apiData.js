@@ -13,6 +13,8 @@ const pinnedProjects = async () => {
   const readmeComponents = readmeArr.map((project) => {
     return project.readme.split("##");
   });
+  const photoUrl =
+    readmeComponents[0][1].split("\n")[2].split("(")[1].slice(1, -1);
 
   const portfolioData = {
     title: readmeArr[0].name,
@@ -26,8 +28,6 @@ const pinnedProjects = async () => {
       .splice(1)
       .join("")
       .trim(),
-    // parsed out title and description from readme, now need to parse out photo url (will go to photo in actual repository)
-    // Need to change all readme photo names to match their repo names exactly
     photo:
       "https://raw.githubusercontent.com" +
       readmeArr[0].url
@@ -36,12 +36,14 @@ const pinnedProjects = async () => {
         .join("") +
       "/DrDano/" +
       readmeArr[0].name +
-      "/main/src/assets/images/" +
-      readmeArr[0].name +
-      ".jpg",
+      "/main" + photoUrl,
+    projectDeployment: /*--deployment url needs to come from Deployment part of readme */deployment,
+    key: 0,
+    /* key will be incremented with loop */
+    projectRepo: readmeArr[0].url
   };
 
-  console.log(portfolioData.photo);
+  console.log(portfolioData.projectRepo);
 };
 
 pinnedProjects();
