@@ -51,7 +51,6 @@ const pinnedProjects = async () => {
   return portfolioProjects
 };
 
-(logPinned = async () => {
+module.exports = (getPinned = async () => {
   const projects = await pinnedProjects();
-  console.log(projects)
 })();
