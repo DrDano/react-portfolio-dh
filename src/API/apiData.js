@@ -51,6 +51,9 @@ const pinnedProjects = async () => {
   return portfolioProjects
 };
 
-module.exports = (getPinned = async () => {
+const getPinned = async () => {
   const projects = await pinnedProjects();
-})();
+  return projects
+};
+
+module.exports = getPinned;

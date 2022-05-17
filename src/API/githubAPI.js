@@ -1,5 +1,4 @@
 const { graphql } = require("@octokit/graphql");
-require("dotenv").config();
 
 module.exports = {
     pinnedProjectsArr: graphql({
