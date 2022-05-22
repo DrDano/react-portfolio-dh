@@ -10,7 +10,7 @@ export default function Portfolio() {
         "https://raw.githubusercontent.com/DrDano/react-portfolio-dh/main/src/assets/images/react-portfolio-dh.jpg",
       projectDeployment: "https://drdano.github.io/react-portfolio-dh/",
       projectRepo: "https://github.com/DrDano/react-portfolio-dh",
-      technologies: 0,
+      technologies: "https://img.shields.io/badge/javascript-100-yellow?logo=javascript",
       title: "react-portfolio-dh",
     },
   ]);
@@ -32,17 +32,17 @@ export default function Portfolio() {
           <div key={`div${p.key}`} className="m-2 d-flex project p-2">
             <p key={`p${p.key}`} className="project-des mx-2 p-2">
               {p.description}
-              {p.projectDeployment && (<div>
+            </p>
+            {p.projectDeployment ? (<div>
                 <a
                 href={p.projectDeployment}
                 rel="noopener noreferrer"
                 target="_blank"
                 className="text-decoration-none project-header"
-              >
+                >
                 Project Deployment
-              </a>
-              </div>)}
-            </p>
+                </a>
+              </div>) : <div className="text-dark">Project is not Deployed</div>}
             <img
               name="project-image"
               src={p.photo}
@@ -58,6 +58,11 @@ export default function Portfolio() {
             >
               Project GitHub Repository
             </a>
+          </div>
+          <div>
+            {<div>{[...p.technologies].map((p) => {
+              return <img src={p}></img>
+            })}</div>}
           </div>
         </div>
       ))}

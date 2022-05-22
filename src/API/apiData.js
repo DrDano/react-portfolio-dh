@@ -15,12 +15,11 @@ const pinnedProjects = async () => {
       .split("![")[1]
       ?.split("(.")[1]
       ?.split(")")[0];
-    console.log(
-      project.readme[3].split("(")[1]?.trim()?.slice(0, -1).slice(0, 4) ===
-        "http"
-        ? project.readme[3].split("(")[1]?.trim()?.slice(0, -1)
-        : ""
-    );
+    console.log([...
+      project.readme[0].split("\n").filter((line) => {
+        return line.trim().slice(0, 2) === "!["
+      }).join("").split("![](").join("").split(")")
+    ]);
     const portfolioData = {
       title: project.name,
       description: project.readme[1]
@@ -33,7 +32,9 @@ const pinnedProjects = async () => {
         .splice(1)
         .join("")
         .trim(),
-      technologies: /* list of technologies based on badges */ 0,
+      technologies: project.readme[0].split("\n").filter((line) => {
+        return line.trim().slice(0, 2) === "!["
+      }).join("").split("![](").join("").split(")"),
       photo:
         "https://raw.githubusercontent.com" +
         project.url
