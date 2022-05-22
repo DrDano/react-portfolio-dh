@@ -43,6 +43,7 @@ export default function Portfolio() {
               {p.description}
             </p>
             <img
+              name="project-image"
               src={p.photo}
               alt={p.title}
               key={`img${p.key}`}

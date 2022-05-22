@@ -12,7 +12,7 @@ const pinnedProjects = async () => {
 
   const portfolioProjects = readmeArr.map((project, i) => {
     const photoUrl = project.readme[1].split("![")[1]?.split("(.")[1]?.split(")")[0];
-    console.log(project.readme[1].split("![")[1]?.split("(.")[1]?.split(")")[0])
+    console.log(project.readme[2].split("\n"))
     const portfolioData = {
       title: project.name,
       description: project.readme[1]
