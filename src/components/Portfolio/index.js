@@ -22,25 +22,26 @@ export default function Portfolio() {
     getPins().catch(console.error);
   }, []);
 
-  console.log(projects);
-
   return (
     <div id="project-container">
       {projects.map((p) => (
         <div className="py-3" id="project-internals" key={`portfolio${p.key}`}>
           <h2 key={`h${p.key}`}>
-            <a
-              href={p.projectDeployment}
-              rel="noopener noreferrer"
-              target="_blank"
-              className="text-decoration-none project-header"
-            >
-              {p.title}
-            </a>
+            {p.title}
           </h2>
           <div key={`div${p.key}`} className="m-2 d-flex project p-2">
             <p key={`p${p.key}`} className="project-des mx-2 p-2">
               {p.description}
+              {p.projectDeployment && (<div>
+                <a
+                href={p.projectDeployment}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="text-decoration-none project-header"
+              >
+                Project Deployment
+              </a>
+              </div>)}
             </p>
             <img
               name="project-image"

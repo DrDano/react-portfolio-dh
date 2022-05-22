@@ -11,8 +11,16 @@ const pinnedProjects = async () => {
   });
 
   const portfolioProjects = readmeArr.map((project, i) => {
-    const photoUrl = project.readme[1].split("![")[1]?.split("(.")[1]?.split(")")[0];
-    console.log(project.readme[2].split("\n"))
+    const photoUrl = project.readme[1]
+      .split("![")[1]
+      ?.split("(.")[1]
+      ?.split(")")[0];
+    console.log(
+      project.readme[3].split("(")[1]?.trim()?.slice(0, -1).slice(0, 4) ===
+        "http"
+        ? project.readme[3].split("(")[1]?.trim()?.slice(0, -1)
+        : ""
+    );
     const portfolioData = {
       title: project.name,
       description: project.readme[1]
@@ -25,7 +33,7 @@ const pinnedProjects = async () => {
         .splice(1)
         .join("")
         .trim(),
-      technologies: /* list of technologies based on badges */0,
+      technologies: /* list of technologies based on badges */ 0,
       photo:
         "https://raw.githubusercontent.com" +
         project.url
@@ -36,10 +44,11 @@ const pinnedProjects = async () => {
         project.name +
         "/main" +
         photoUrl,
-      projectDeployment: project.readme[3]
-        .split("(")[1]
-        ?.trim()
-        ?.slice(0, -1),
+      projectDeployment:
+        project.readme[3].split("(")[1]?.trim()?.slice(0, -1).slice(0, 4) ===
+        "http"
+          ? project.readme[3].split("(")[1]?.trim()?.slice(0, -1)
+          : "",
       key: i,
       projectRepo: project.url,
     };
