@@ -1,8 +1,8 @@
 const { pinnedProjectsArr } = require("./githubAPI");
 
 const pinnedProjects = async () => {
-  const pinnedData = await pinnedProjectsArr;
-  const readmeArr = await pinnedData.user.pinnedItems.edges.map((project) => {
+  const pinnedProjects = await pinnedProjectsArr;
+  const readmeArr = pinnedProjects.user.pinnedItems.edges.map((project) => {
     return {
       name: project.node.name,
       readme: project.node.object.text.split("##"),
@@ -10,7 +10,7 @@ const pinnedProjects = async () => {
     };
   });
 
-  const portfolioProjects = await readmeArr.map((project, i) => {
+  const portfolioProjects = readmeArr.map((project, i) => {
     const photoUrl = project.readme[1]
       .split("\n")[2]
       .split("(")[1]
@@ -48,12 +48,7 @@ const pinnedProjects = async () => {
     };
     return portfolioData;
   });
-  return portfolioProjects
+  return portfolioProjects;
 };
 
-const getPinned = async () => {
-  const projects = await pinnedProjects();
-  return projects
-};
-
-module.exports = getPinned;
+module.exports = pinnedProjects;
