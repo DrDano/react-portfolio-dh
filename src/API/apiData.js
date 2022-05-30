@@ -15,11 +15,11 @@ const pinnedProjects = async () => {
       .split("![")[1]
       ?.split("(.")[1]
       ?.split(")")[0];
-    console.log([...
-      project.readme[0].split("\n").filter((line) => {
-        return line.trim().slice(0, 2) === "!["
-      }).join("").split("![](").join("").split(")")
-    ]);
+    // console.log([...
+    //   project.readme[0].split("\n").filter((line) => {
+    //     return line.trim().slice(0, 2) === "!["
+    //   }).join("").split("![](").join("").split(")")
+    // ]);
     const portfolioData = {
       title: project.name,
       description: project.readme[1]

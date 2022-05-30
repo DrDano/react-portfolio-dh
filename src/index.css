@@ -253,14 +253,26 @@ footer {
   #project-internals {
     width: 100%;
   }
-  
-  .project {
+
+  #project-container {
+    overflow: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 96vw;
+    background-color: var(--main-bg-color);
+    border: var(--grey-color-1) 0.7rem solid;
+    border-radius: 1rem;
+  }
+  
+  .project {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%
   }
 
-  .project img {
-    width: 100%;
+  .project-img {
+    width: 98%;
     height: 100%;
   }
 

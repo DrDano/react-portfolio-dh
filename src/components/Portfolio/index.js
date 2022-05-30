@@ -25,7 +25,7 @@ export default function Portfolio() {
 
   return (
     <div id="project-container">
-      {projects.map((p) => (
+      {projects.slice(1).map((p) => (
         <div className="py-3" id="project-internals" key={`portfolio${p.key}`}>
           <h2 key={`h${p.key}`}>{p.title}</h2>
           <div key={`div${p.key}`} className="m-2 project p-2">
@@ -33,8 +33,8 @@ export default function Portfolio() {
             <p key={`p${p.key}`} className="project-des mx-2 p-2">
               {p.description}
             </p>
+            <div className="project-links" key={`links-${p.key}`}>
             {p.projectDeployment ? (
-              <div className="project-links">
                 <a
                   href={p.projectDeployment}
                   rel="noopener noreferrer"
@@ -43,6 +43,9 @@ export default function Portfolio() {
                 >
                   Deployment
                 </a>
+                ) : (
+              <div className="text-dark">Project is not Deployed</div>
+              )}
                 <a
                   href={p.projectRepo}
                   rel="noopener noreferrer"
@@ -53,9 +56,6 @@ export default function Portfolio() {
                   GitHub Repo
                 </a>
               </div>
-            ) : (
-              <div className="text-dark">Project is not Deployed</div>
-            )}
             </div>
             <div>
               <img
