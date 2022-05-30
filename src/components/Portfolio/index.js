@@ -29,19 +29,19 @@ export default function Portfolio() {
         <div className="py-3" id="project-internals" key={`portfolio${p.key}`}>
           <h2 key={`h${p.key}`}>{p.title}</h2>
           <div key={`div${p.key}`} className="m-2 project p-2">
-            <div>
+            <div className="project-details">
             <p key={`p${p.key}`} className="project-des mx-2 p-2">
               {p.description}
             </p>
             {p.projectDeployment ? (
-              <div className="project-content">
+              <div className="project-links">
                 <a
                   href={p.projectDeployment}
                   rel="noopener noreferrer"
                   target="_blank"
                   className="text-decoration-none"
                 >
-                  Project Deployment
+                  Deployment
                 </a>
                 <a
               href={p.projectRepo}
@@ -50,19 +50,22 @@ export default function Portfolio() {
               key={`anchor${p.key}`}
               className="project-gh text-decoration-none px-2"
             >
-              Project GitHub Repository
+              GitHub Repo
             </a>
               </div>
             ) : (
               <div className="text-dark">Project is not Deployed</div>
             )}
             </div>
-            <img
-              name="project-image"
-              src={p.photo}
-              alt={p.title}
-              key={`img${p.key}`}
-            />
+            <div>
+              <img
+                name={`project-image-${p.key}`}
+                className="project-img"
+                src={p.photo}
+                alt={p.title}
+                key={`img${p.key}`}
+              />
+            </div>
             <div>
               {
                 <div className="project-technologies">
