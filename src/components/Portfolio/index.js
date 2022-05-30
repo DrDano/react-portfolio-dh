@@ -39,19 +39,19 @@ export default function Portfolio() {
                   href={p.projectDeployment}
                   rel="noopener noreferrer"
                   target="_blank"
-                  className="text-decoration-none"
+                  className="text-decoration-none project-link"
                 >
                   Deployment
                 </a>
                 <a
-              href={p.projectRepo}
-              rel="noopener noreferrer"
-              target="_blank"
-              key={`anchor${p.key}`}
-              className="project-gh text-decoration-none px-2"
-            >
-              GitHub Repo
-            </a>
+                  href={p.projectRepo}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  key={`anchor${p.key}`}
+                  className="project-link text-decoration-none px-2"
+                >
+                  GitHub Repo
+                </a>
               </div>
             ) : (
               <div className="text-dark">Project is not Deployed</div>
