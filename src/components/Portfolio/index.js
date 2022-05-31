@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import pinnedProjects from "../../API/apiData";
+const pinnedProjects = require("../../API/apiData");
 
 export default function Portfolio() {
   const [projects, setProjects] = useState([
