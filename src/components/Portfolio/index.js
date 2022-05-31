@@ -30,22 +30,22 @@ export default function Portfolio() {
           <h2 key={`h${p.key}`}>{p.title}</h2>
           <div key={`div${p.key}`} className="m-2 project p-2">
             <div className="project-details">
-            <p key={`p${p.key}`} className="project-des mx-2 p-2">
-              {p.description}
-            </p>
-            <div className="project-links" key={`links-${p.key}`}>
-            {p.projectDeployment ? (
-                <a
-                  href={p.projectDeployment}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="text-decoration-none project-link"
-                >
-                  Deployment
-                </a>
+              <p key={`p${p.key}`} className="project-des mx-2 p-2">
+                {p.description}
+              </p>
+              <div className="project-links" key={`links-${p.key}`}>
+                {p.projectDeployment ? (
+                  <a
+                    href={p.projectDeployment}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="text-decoration-none project-link"
+                  >
+                    Deployment
+                  </a>
                 ) : (
-              <div className="text-dark">Project is not Deployed</div>
-              )}
+                  <div className="text-dark">Project is not Deployed</div>
+                )}
                 <a
                   href={p.projectRepo}
                   rel="noopener noreferrer"
@@ -69,9 +69,15 @@ export default function Portfolio() {
             <div>
               {
                 <div className="project-technologies">
-                  {[...p.technologies].slice(0, p.technologies.length - 1).map((p) => {
-                    return <div className="tech-used"><img src={p} className="tech-used-img"></img></div>;
-                  })}
+                  {[...p.technologies]
+                    .slice(0, p.technologies.length - 1)
+                    .map((p) => {
+                      return (
+                        <div className="tech-used">
+                          <img src={p} className="tech-used-img"></img>
+                        </div>
+                      );
+                    })}
                 </div>
               }
             </div>

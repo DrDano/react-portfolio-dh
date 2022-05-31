@@ -32,9 +32,15 @@ const pinnedProjects = async () => {
         .splice(1)
         .join("")
         .trim(),
-      technologies: project.readme[0].split("\n").filter((line) => {
-        return line.trim().slice(0, 2) === "!["
-      }).join("").split("![](").join("").split(")"),
+      technologies: project.readme[0]
+        .split("\n")
+        .filter((line) => {
+          return line.trim().slice(0, 2) === "![";
+        })
+        .join("")
+        .split("![](")
+        .join("")
+        .split(")"),
       photo:
         "https://raw.githubusercontent.com" +
         project.url
