@@ -235,12 +235,38 @@ footer {
 
 @media only screen and (max-width: 600px) {
 
+  body {
+    background-size: cover;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .btn {
+    width: 60%;
+    height: 3vh;
+    flex: 1 0;
+  }
+
+  nav span {
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
   #about-container {
     padding: 2vw;
   }
 
   #resume {
-    width: 90vw;
+    width: 95vw;
     height: 65vh;
     margin: 0;
     padding: 0;
@@ -258,17 +284,20 @@ footer {
     overflow: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 96vw;
-    background-color: var(--main-bg-color);
+    width: 95vw;
     border: var(--grey-color-1) 0.7rem solid;
     border-radius: 1rem;
   }
   
   .project {
-    border-radius: 5px;
-    width: 100%;
-    height: 100%
+    flex-direction: column;
+    max-height: none;
+    max-width: none;
+    margin: 3vh 0;
+  }
+
+  #project-internals {
+    margin: 1vh 0;
   }
 
   .project-img {
