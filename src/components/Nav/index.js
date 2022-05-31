@@ -29,7 +29,7 @@ export default function Nav(props) {
         </li>
       </ul>
     </nav>
-    <div>
+    <div className="mx-3" id="email">
       danielharned@gmail.com
     </div>
     </>

@@ -108,6 +108,11 @@ span {
   background-color: var(--accent-color) !important;
 }
 
+#email {
+  color: var(--main-bg-color);
+  font-weight: bold;
+}
+
 #about-container {
   display: flex;
   flex-direction: row;
