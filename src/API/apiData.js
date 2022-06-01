@@ -1,6 +1,6 @@
 const { pinnedProjectsArr } = require("./githubAPI");
 
-const pinnedProjects = async () => {
+export default async () => {
   const pinnedProjects = await pinnedProjectsArr;
   const readmeArr = pinnedProjects.user.pinnedItems.edges.map((project) => {
     return {
@@ -63,5 +63,3 @@ const pinnedProjects = async () => {
   });
   return portfolioProjects;
 };
-
-module.exports = pinnedProjects;
