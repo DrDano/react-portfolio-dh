@@ -31,6 +31,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.REACT_APP_GH_TOKEN }}
         run: |
           env
-          npm install
-          npm run gh-pages -d build
+        # npm install
+        # npm run gh-pages -d build
 
