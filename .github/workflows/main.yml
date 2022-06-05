@@ -27,12 +27,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build-Deploy
-        run: 
-          npm install
-          npm run gh-pages -d build
         env:
           GITHUB_TOKEN: ${{ secrets.REACT_APP_GH_TOKEN }}
-        with:
-          GITHUB_TOKEN: 
-
-        
+          GITHUB_GRAPHQL_URL:
+        run: env
+        # run: 
+        #   npm install
+        #   npm run gh-pages -d build
+        # with:
+        #   GITHUB_TOKEN:
