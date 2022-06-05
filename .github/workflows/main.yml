@@ -29,6 +29,7 @@ jobs:
         with:
           node-version: 14
           GITHUB_TOKEN: ${{ secrets.REACT_APP_GH_TOKEN }}
-        run: npm ci
-        run: npm run gh-pages -d build
+        run: 
+          npm ci
+          npm run gh-pages -d build
 
