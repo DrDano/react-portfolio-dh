@@ -31,12 +31,11 @@ jobs:
           npm install
           npm run build
         env:
-          REACT_APP_GH_TOKEN: ${{ secrets.REACT_APP_GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.REACT_APP_GH_TOKEN }}
       
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          REACT_APP_GH_TOKEN: ${{ secrets.REACT_APP_GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.REACT_APP_GH_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: build
         
