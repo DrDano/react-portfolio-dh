@@ -1,8 +1,4 @@
 import React from "react";
-// have email address visible
-// employers wont fill out contact form (remove it)
-// change font color for contrast across pages
-// Possibly make the resume interactive
 
 export default function AboutMe() {
   return (

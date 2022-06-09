@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Build-Deploy
-        with:
-          node-version: 14
-          ACTIONS_RUNTIME_TOKEN: ${{ secrets.REACT_APP_GH_TOKEN }}
-          cache: 'npm'
-        run: 
-          npm ci
-          npm run gh-pages -d build
+      - name: Build
+
+      - name: Deploy with gh-pages
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.REACT_GITHUB_TOKEN }}
 
