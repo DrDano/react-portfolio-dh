@@ -21,4 +21,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REACT_GITHUB_TOKEN: ${{secrets.REACT_GITHUB_TOKEN}}
+          REACT_GH_TOKEN: ${{secrets.REACT_GH_TOKEN}}
 
