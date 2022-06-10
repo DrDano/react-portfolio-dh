@@ -1,4 +1,5 @@
 const { graphql } = require("@octokit/graphql");
+// changes necessary for redeploy
 
 module.exports = {
     pinnedProjectsArr: graphql({
