@@ -14,7 +14,7 @@ jobs:
         with:
           envkey_DEBUG: false
           envkey_SECRET_KEY: ${{ secrets.REACT_APP_GITHUB_TOKEN }}
-          file_name: ${{repository}}/.env
+          file_name: ${{github.repository}}/.env
           fail_on_empty: true
 
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
