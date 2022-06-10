@@ -24,7 +24,7 @@ module.exports = {
     }`,
       login: "DrDano",
       headers: {
-        authorization: "token " + process.env.SECRET_KEY,
+        authorization: "token " + process.env.envkey_SECRET_KEY,
       },
     }),
   };
