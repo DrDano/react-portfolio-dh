@@ -13,7 +13,7 @@ jobs:
         uses: SpicyPizza/create-envfile@v1.3
         with:
           envkey_DEBUG: false
-          envkey_SECRET_KEY: ${{ secrets.REACT_APP_GH_TOKEN }}
+          envkey_SECRET_KEY: ${{ secrets.REACT_APP_GITHUB_TOKEN }}
           file_name: .env
           fail_on_empty: true
 
