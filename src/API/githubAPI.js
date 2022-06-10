@@ -1,5 +1,5 @@
 const { graphql } = require("@octokit/graphql");
-// changes necessary for redeploy
+process.env.SECRET_KEY.split("_")[0] === "ghp" ? console.log("I found the API key stored at SECRET_KEY") : console.log("I didn't find the API key at SECRET_KEY")
 
 module.exports = {
     pinnedProjectsArr: graphql({
