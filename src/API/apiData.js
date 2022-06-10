@@ -28,7 +28,7 @@ const pinnedProjects = async () => {
           if (chunk.search(/^(.+)\/+([^/]+)$/)) {
             return chunk;
           }
-          return;
+          return "";
         })
         .splice(1)
         .join("")
