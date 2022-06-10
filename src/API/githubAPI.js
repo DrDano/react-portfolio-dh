@@ -24,7 +24,7 @@ module.exports = {
     }`,
       login: "DrDano",
       headers: {
-        authorization: "token " + "github.secrets.REACT_GH_TOKEN",
+        authorization: "token " + process.env.REACT_GH_TOKEN,
       },
     }),
   };
