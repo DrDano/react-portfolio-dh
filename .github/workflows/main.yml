@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3.3.0
-        with:
-          node-version: 14
+      # - name: Setup Node.js environment
+      #   uses: actions/setup-node@v3.3.0
+      #   with:
+      #     node-version: 14
           
       - name: Checkout 🛎️
         uses: actions/checkout@v3
