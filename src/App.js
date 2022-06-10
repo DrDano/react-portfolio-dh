@@ -11,11 +11,8 @@ import About from "./components/About";
 
 function App() {
   const [tabSelected, setTabSelected] = useState("about");
-
-  {
-    document.title = "Daniel";
-  }
-
+  document.title = "Daniel";
+  
   return (
     <div>
       <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -74,7 +74,7 @@ export default function Portfolio() {
                     .map((p) => {
                       return (
                         <div className="tech-used">
-                          <img src={p} className="tech-used-img"></img>
+                          <img src={p} alt="" className="tech-used-img"></img>
                         </div>
                       );
                     })}

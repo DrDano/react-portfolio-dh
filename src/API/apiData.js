@@ -1,6 +1,6 @@
 const { pinnedProjectsArr } = require("./githubAPI");
 
-export default async () => {
+const pinnedProjects = async () => {
   const pinnedProjects = await pinnedProjectsArr;
   const readmeArr = pinnedProjects.user.pinnedItems.edges.map((project) => {
     return {
@@ -25,9 +25,10 @@ export default async () => {
       description: project.readme[1]
         .split("\n")
         .filter((chunk) => {
-          if (chunk.search(/^(.+)\/+([^\/]+)$/)) {
+          if (chunk.search(/^(.+)\/+([^/]+)$/)) {
             return chunk;
           }
+          return;
         })
         .splice(1)
         .join("")
@@ -63,3 +64,5 @@ export default async () => {
   });
   return portfolioProjects;
 };
+
+export default pinnedProjects;
