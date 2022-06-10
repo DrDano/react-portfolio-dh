@@ -6,16 +6,17 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
-        with:
-          repository: ${{ github.repository }}
-      
+
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.3.0
         with:
           node-version: 14
           
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ github.repository }}
+
       - name: Make envfile
         uses: SpicyPizza/create-envfile@v1.3
         with:
