@@ -1,5 +1,5 @@
 const { graphql } = require("@octokit/graphql");
-process.env.SECRET_KEY ? console.log("I found the API key stored at SECRET_KEY") : console.log("I didn't find the API key at SECRET_KEY")
+process.env.REACT_APP_GITHUB_TOKEN ? console.log("I found the API key stored at SECRET_KEY") : console.log("I didn't find the API key at SECRET_KEY")
 
 module.exports = {
     pinnedProjectsArr: graphql({
@@ -25,7 +25,7 @@ module.exports = {
     }`,
       login: "DrDano",
       headers: {
-        authorization: "token " + process.env.SECRET_KEY,
+        authorization: "token " + process.env.REACT_APP_GITHUB_TOKEN,
       },
     }),
   };
