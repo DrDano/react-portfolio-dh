@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-const pinnedProjects = require("../../API/apiData");
 
 export default function Portfolio() {
   const [projects, setProjects] = useState([
@@ -17,7 +16,9 @@ export default function Portfolio() {
   ]);
   useEffect(() => {
     const getPins = async () => {
-      const response = await pinnedProjects();
+      const response = await fetch('./gh-api', {
+        method: "GET",
+      })
       setProjects(response);
     };
     getPins().catch(console.error);
