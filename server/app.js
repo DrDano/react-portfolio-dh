@@ -6,8 +6,6 @@ const logger = require('morgan');
 const cors = require('cors');
 require('dotenv').config()
 
-const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
 const ghApi = require("./routes/API/apiData");
 
 const app = express();
@@ -29,10 +27,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/gh-api', ghApi);
 
 // catch 404 and forward to error handler
