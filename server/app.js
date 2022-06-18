@@ -16,7 +16,7 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-let allowedOrigins = ['http://localhost:3000', 'http://localhost:3001'];
+let allowedOrigins = ['http://localhost:3000', 'http://localhost:3001', 'https://drdano.github.io/react-portfolio-dh/'];
 
 app.use(cors({
   origin: (origin, callback) => {
