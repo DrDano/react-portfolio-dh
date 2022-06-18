@@ -20,7 +20,8 @@ export default function Portfolio() {
   useEffect(() => {
     const getPins = async () => {
       const response = await (
-        await fetch(`${config.url}/gh-api`, {
+        await fetch(`https://git.heroku.com/portfolio-dh.git
+        /gh-api`, {
           headers: {
             "Content-Type": "application/json",
           },
