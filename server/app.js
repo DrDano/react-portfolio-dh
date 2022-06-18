@@ -3,8 +3,8 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const cors = require('cors');
 require('dotenv').config()
-const PORT = process.env.PORT || 9000;
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -15,6 +15,19 @@ const app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+
+let allowedOrigins = ['http://localhost:3000', 'http://localhost:3001'];
+
+app.use(cors({
+  origin: (origin, callback) => {
+    if(!origin) return callback(null, true);
+    if(allowedOrigins.indexOf(origin) === -1){ // If a specific origin isn’t found on the list of allowed origins
+      let message = 'The CORS policy for this application doesn’t allow access from origin ' + origin;
+      return callback(new Error(message ), false);
+    }
+    return callback(null, true);
+  }
+}));
 
 app.use(logger('dev'));
 app.use(express.json());

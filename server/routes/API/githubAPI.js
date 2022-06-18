@@ -1,5 +1,5 @@
 const { graphql } = require("@octokit/graphql");
-process.env.REACT_APP_GH_TOKEN ? console.log("I found the API key stored at REACT_APP_GH_TOKEN") : console.log("I didn't find the API key at REACT_APP_GH_TOKEN")
+process.env.REACT_APP_GH_TOKEN ? console.log("I found the API key") : console.log("I didn't find an API key")
 
 module.exports = {
     pinnedProjectsArr: graphql({

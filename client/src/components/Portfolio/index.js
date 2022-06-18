@@ -10,19 +10,19 @@ export default function Portfolio() {
       projectDeployment: "https://drdano.github.io/react-portfolio-dh/",
       projectRepo: "https://github.com/DrDano/react-portfolio-dh",
       technologies:
-        "https://img.shields.io/badge/javascript-100-yellow?logo=javascript",
+        ["https://img.shields.io/badge/javascript-100-yellow?logo=javascript", "https://img.shields.io/badge/javascript-100-yellow?logo=javascript"],
       title: "react-portfolio-dh",
     },
   ]);
   useEffect(() => {
     const getPins = async () => {
-      const response = await fetch('./gh-api', {
-        method: "GET",
-      })
+      const response = await (await fetch(`http://localhost:3001/gh-api`)).json()
       setProjects(response);
     };
     getPins().catch(console.error);
   }, []);
+
+  console.log(projects)
 
   return (
     <div id="project-container">
