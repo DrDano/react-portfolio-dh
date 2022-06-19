@@ -20,7 +20,7 @@ export default function Portfolio() {
   useEffect(() => {
     const getPins = async () => {
       const response = await (
-        await fetch(`/api/gh-api`, {
+        await fetch(`/`, {
           headers: {
             "Content-Type": "application/json",
           },
