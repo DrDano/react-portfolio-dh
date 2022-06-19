@@ -67,7 +67,7 @@ const pinnedProjects = async () => {
   return portfolioProjects;
 };
 
-router.get('https://portfolio-dh.herokuapp.com/', async function(req, res, next) {
+router.get('/react-portfolio-dh/gh-api', async function(req, res, next) {
   const projectPins = await pinnedProjects();
   res.json(projectPins);
 });
