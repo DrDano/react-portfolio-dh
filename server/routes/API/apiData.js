@@ -67,10 +67,9 @@ const pinnedProjects = async () => {
   return portfolioProjects;
 };
 
-router.get('/react-portfolio-dh/gh-api', async function(req, res, next) {
+router.get('/gh-api', async function(req, res, next) {
   const projectPins = await pinnedProjects();
   res.json(projectPins);
 });
 
 module.exports = router;
-// module.exports = pinnedProjects;
