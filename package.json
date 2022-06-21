@@ -4,7 +4,7 @@
   "description": "This portfolio was built with React to showcase some of my projects, peruse and enjoy!",
   "main": "index.js",
   "scripts": {
-    "start": "cd ./server && node app.js",
+    "start": "node server/app.js",
     "develop": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build"

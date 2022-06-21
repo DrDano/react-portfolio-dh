@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./app.js",
+    "watch": "nodemon ./app.js"
   },
   "dependencies": {
     "@octokit/graphql": "^4.8.0",
@@ -14,5 +15,8 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
