@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import {config} from "../../config"
 
 export default function Portfolio() {
   const [projects, setProjects] = useState([

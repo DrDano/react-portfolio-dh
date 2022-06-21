@@ -29,7 +29,7 @@ export default function Footer() {
     {elements.map((element, i) => (
         <div key={"div" + i}>
             <a href={element.url} rel="noopener noreferrer" target="_blank" key={"anchor" + i}>
-            <img src={require(`../../assets/icons/${element.icon}`)} alt={element.title} key={element.title + i}></img>
+            <img src={require(`../../icons/${element.icon}`)} alt={element.title} key={element.title + i}></img>
             </a>
         </div>
     ))}

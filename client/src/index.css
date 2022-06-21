@@ -16,7 +16,7 @@
 
 body {
   min-height: 100vh;
-  background-image: url("./assets/images/desert-5112222.svg");
+  background-image: url("./images/desert-5112222.svg");
   background-repeat: repeat-x;
   background-color: var(--main-bg-color);
   background-size: cover;

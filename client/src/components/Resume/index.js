@@ -10,6 +10,5 @@ export default function Resume() {
       <a href="https://docs.google.com/document/d/1zDYxeqiuctxX8lKPY44np3iUR1HGdWglGgCx5zP_Soc/edit?usp=sharing">Download Resume Here</a>
       </div>
     </div>
-    
   )
 }

@@ -12,7 +12,7 @@ export default function AboutMe() {
             target="_blank"
           >
             <img
-              src={require("../../assets/images/dh-portrait.png")}
+              src={require("../../images/dh-portrait.png")}
               alt="portrait"
               width="130"
               height="130"
