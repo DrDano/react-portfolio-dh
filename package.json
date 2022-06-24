@@ -2,7 +2,7 @@
   "name": "react-portfolio-dh",
   "version": "1.0.0",
   "description": "This portfolio was built with React to showcase some of my projects, peruse and enjoy!",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
     "start": "node server/app.js",
     "develop": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
