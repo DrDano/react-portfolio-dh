@@ -25,7 +25,7 @@ This is my portfolio showcasing some of my projects, peruse and enjoy.
   * [License](#license)
 
   ## Deployment
-  [Heroku Deployment](https://dashboard.heroku.com/apps/portfolio-dh)
+  [Heroku Deployment](https://portfolio-dh.herokuapp.com/)
 
   ## Installation
   No install required! If you want to deploy it somewhere else for some reason (hey, free advertising!), that can easily be done by cloning the repo.
