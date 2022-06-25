@@ -1,5 +1,5 @@
 # React-Portfolio Daniel H.
-This portfolio was built with React to showcase some of my projects, peruse and enjoy!
+This is my portfolio showcasing some of my projects, peruse and enjoy.
 
   ![](https://img.shields.io/badge/javascript-100-yellow?logo=javascript)
   ![](https://img.shields.io/badge/react-dep-blue?logo=react)
@@ -7,13 +7,13 @@ This portfolio was built with React to showcase some of my projects, peruse and 
 
   ## Description
 
-  ![react-portfolio-demo](./src/assets/images/react-portfolio-dh.jpg)
+  ![react-portfolio-demo](./client/src/images/react-portfolio-dh.jpg)
 
-  This application is deployed to GitHub pages.
+  This application is deployed to Heroku.
 
-  This is my website, I built it to show off some of my projects and skills! Take a look through my projects, peruse my resume, read a bit about me, and if you like what you see, send me an email or message.
+  This is my website, I built it to show off some of my projects and skills! Take a look through my projects, peruse my resume, read a bit about me, and if you like what you see, send me an email.
 
-  The front end of this site was built primarily with react.js, and is a single-page-website. React-Bootstrap powers the form and much of the styling.
+  The front end of this site was built primarily with react.js, and is a single-page-website. React-Bootstrap powers the form and much of the styling. The backend is built entirely on express.js and is primarily there to serve my projects from the github api through a graphql query.
 
   ## Table of contents
 
@@ -25,7 +25,7 @@ This portfolio was built with React to showcase some of my projects, peruse and 
   * [License](#license)
 
   ## Deployment
-  [GitHub Pages Deployment](https://drdano.github.io/react-portfolio-dh/)
+  [Heroku Deployment](https://dashboard.heroku.com/apps/portfolio-dh)
 
   ## Installation
   No install required! If you want to deploy it somewhere else for some reason (hey, free advertising!), that can easily be done by cloning the repo.
