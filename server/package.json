@@ -2,10 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "private": true,
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node ./app.js",
-    "watch": "nodemon ./app.js"
+    "start": "node ./server.js",
+    "watch": "nodemon ./server.js"
   },
   "dependencies": {
     "@octokit/graphql": "^4.8.0",
