@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-require('dotenv').config();
 
 const PORT = process.env.PORT || 3001;
 
@@ -18,7 +17,7 @@ app.use(cookieParser());
 
 const root = path.join(__dirname, '../client/build')
 app.use(express.static(root));
-app.get("*", (req, res) => {
+app.get("/", (req, res) => {
   res.sendFile('index.html', { root });
 })
 

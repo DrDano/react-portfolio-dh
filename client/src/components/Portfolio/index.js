@@ -30,8 +30,6 @@ export default function Portfolio() {
     getPins().catch(console.error);
   }, []);
 
-  console.log(projects);
-
   return (
     <div id="project-container">
       {projects.slice(1).map((p) => (
