@@ -1,5 +1,6 @@
-name: Build and Deploy
-on: 
+name: Deploy to Heroku
+
+on:
   push:
     branches:
       - main
@@ -9,18 +10,8 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3.3.0
-        with:
-          node-version: 14
-          
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
-        with:
-          repository: ${{ github.repository }}
-
-      -name: Deploy
-        uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "portfolio-dh"
