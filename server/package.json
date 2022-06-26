@@ -4,8 +4,7 @@
   "private": true,
   "main": "server.js",
   "scripts": {
-    "start": "node ./server.js",
-    "watch": "nodemon ./server.js"
+    "start": "node ./server.js"
   },
   "dependencies": {
     "@octokit/graphql": "^4.8.0",
@@ -17,7 +16,5 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.16"
-  }
+  "devDependencies": {}
 }

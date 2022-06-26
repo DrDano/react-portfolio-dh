@@ -84,7 +84,7 @@ h6 {
 }
 
 p {
-  color: var(--grey-color-1);
+  color: var(--light-color);
 }
 
 span {
@@ -214,7 +214,7 @@ h2 {
 }
 
 .project-des {
-  color: var(--grey-color-2);
+  color: var(--light-color);
   background-color: #4f6367c6;
   max-height: 35vh;
   overflow: scroll;
